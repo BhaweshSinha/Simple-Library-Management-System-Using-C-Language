@@ -21,7 +21,7 @@ void addBook() {
     Book book;
     printf("Enter Book ID: ");
     scanf("%d", &book.id);
-    getchar(); // Clear newline left in buffer
+    getchar();
     printf("Enter Book Title: ");
     fgets(book.title, MAX_TITLE, stdin);
     book.title[strcspn(book.title, "\n")] = 0;
